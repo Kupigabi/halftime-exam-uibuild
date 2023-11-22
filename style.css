@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #C0EBF9;
+    
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #467745;
+    text-align: center;
+}
+div>input{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    max-width: 600px;
+    height: 64;
+}
+textarea{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    max-width: 600px;
+    height: 120px;
+}
+input, textarea {
+    padding: 20px;
+    border: 0;
+}
+.checkbox-container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+button{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    color: #C0EBF9;
+
+    align-items: center;
+    margin: 0 auto;
+    width: 200px;
+    max-width: 280px;
+    height: 80px;
+
+    background-color: #467745;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    border: none;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #467745;
+    
+}
+a{
+    color: #467745;
+}
+
+::placeholder{
+    color: #467745;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+}
+
+@media only screen and (max-width:640px) {
+    form.container{
+        margin-left: 20px; 
+    }
+    h1{
+        text-align: left;
+        color: #467745;
+    }
+    input{
+        width: calc(100% - 40px);
+        color: #467745;
+        margin-left: 20px;    
+    }
+    textarea{
+        width: calc(100% - 40px);
+        margin-left: 20px;
+        color: #467745;
+    }
+    div.checkbox-container{
+        width: calc(100% - 40px);
+        margin-left: 20px;
+        color: #467745;
+    }
+
+    button{
+        width: calc(100% - 40px);
+        margin-left: 20px;
+    }
+
+}
