@@ -1,23 +1,20 @@
 document.querySelector("#root").insertAdjacentHTML("beforeend", `
-<from class="container">
     <h1>Visszajelzés</h1>
 
-    <input type="text "placeholder="Tárgy">
+    <input type="text" placeholder="Tárgy">
 
     <textarea placeholder="Megjegyzés"></textarea>
 
-    <div class="checkbox-container">
-        <input type="checkbox" class="checkbox-1">
+    <div>
+        <input type="checkbox">
             <p>Elolvastam és elfogadom az <a href="">Adatkezelési Tájéjoztatót</a></p>
     </div>
 
-    <div class="checkbox-container">
-        <input type="checkbox" class="checkbox-2">
+    <div>
+        <input type="checkbox">
         <p>Szeretnék hírlevelet kapni</p>
     </div>
 
     <button>Mentés</button>
-</form>
-
 
 `)
